@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "experiments-cifar"
+version = "0.1.0"
+description = ""
+authors = ["Arseniy Shkunkov <shkunkov.a@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "experiments_cifar"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+omegaconf = "^2.3.0"
+torch = "^1.13.1"
+pytorch-lightning = "^1.9.4"
+numpy = "^1.24.2"
+pillow = "^9.4.0"
+matplotlib = "^3.7.1"
+torchvision = "^0.14.1"
+scikit-learn = "^1.2.1"
+wandb = "^0.13.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
